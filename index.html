@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Memory game</title>
+    <script src="./src/game.js" defer></script>
+    <script src="./src/extraFeatures.js" defer></script>
+  </head>
+  <body>
+    <header>
+      Memory Game
+      <p id="flips">Flips: 0</p>
+    </header>
+    <p>Can you match the hidden pictures?</p>
+    <div class="grid-size">
+      <label for="selectOptions">Select grid size:</label>
+      <select id="selectOptions" onchange="gridSize()">
+        <option value="four" id="four">2 X 2</option>
+        <option value="six" id="six">3 X 2</option>
+        <option value="eight" id="eight">2 X 4</option>
+        <option value="defaultTwelve" id="default-twelve" selected>
+          4 X 3
+        </option>
+        <option value="twelve" id="twelve">3 X 4</option>
+      </select>
+    </div>
+
+    <div id="grid-container"></div>
+    <p id="p-timer">Timer</p>
+    <p id="show-time">00:00</p>
+  </body>
+</html>

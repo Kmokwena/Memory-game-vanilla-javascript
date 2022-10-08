@@ -1,0 +1,81 @@
+body {
+  background-image: linear-gradient(to right, white, lightgreen, lightblue);
+}
+#grid-container {
+  display: inline-grid;
+  max-width: 600px;
+  justify-items: center;
+  padding-left: 300px;
+}
+.four {
+  grid-template-columns: 0.2fr 0.2fr;
+  grid-template-rows: 0.1fr 0.1fr;
+}
+.six {
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  grid-template-rows: 0.1fr 0.1fr;
+}
+.eight {
+  grid-template-columns: 0.2fr 0.2fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+}
+.default-twelve {
+  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
+}
+.twelve {
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+}
+.grid-item,
+.grid-item2 {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 9px;
+  border-radius: 10px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+header {
+  background-color: seagreen;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+img {
+  width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  visibility: hidden;
+}
+p {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+select {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 15px;
+  width: 150px;
+  border-radius: 10px;
+}
+#p-timer {
+  position: absolute;
+  top: 120px;
+  right: 400px;
+  font-size: 25px;
+}
+#show-time {
+  position: absolute;
+  top: 150px;
+  right: 400px;
+  font-size: 25px;
+}
+
+#flips {
+  font-size: 30px;
+}
